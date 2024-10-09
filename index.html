@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hmmmmmmmmmmmmm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+        }
+        #linkDisplay {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>hmmmmmmmmmmmmm</h1>
+    <input type="text" id="linkInput" placeholder="hmmmmmmmmmmmmm">
+    <button onclick="generateLink()">hmmmmmmmmmmmmm</button>
+
+    <div id="linkDisplay"></div>
+
+    <script>
+        function generateLink() {
+            const input = document.getElementById('linkInput').value;
+            const display = document.getElementById('linkDisplay');
+
+            if (input) {
+                display.innerHTML = `<a href="https://${input}" target="_blank">${input}</a>`;
+
+            } else {
+                display.innerHTML = 'hmmmmmmmmmmmmm.';
+            }
+        }
+    </script>
+
+</body>
+</html>
